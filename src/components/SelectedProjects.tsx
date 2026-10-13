@@ -17,7 +17,7 @@ export const SelectedProjects: React.FC<SelectedProjectsProps> = ({ onSelectProj
     { id: "creative", label: "Creative & Agency" },
   ];
 
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = (projects || []).filter((project) => {
     if (filter === "all") return true;
     if (filter === "e-commerce") return project.category.toLowerCase().includes("commerce");
     if (filter === "saas") return project.category.toLowerCase().includes("saas");

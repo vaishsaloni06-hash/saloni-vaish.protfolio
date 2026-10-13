@@ -92,7 +92,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Executive Profile
             </h2>
             <p className="text-sm text-[#93C5FD]/85 leading-relaxed">
-              Forward-thinking creative web developer with 5+ years of experience engineering high-performance web applications, luxury e-commerce platforms, and interactive digital flagships. Proficient in modern React architectures, TypeScript invariants, and sub-100ms fluid motion design.
+              Forward-thinking creative web developer with 1+ years of experience engineering high-performance web applications, modern websites, and interactive digital experiences. Proficient in modern React architectures, TypeScript invariants, and fluid micro-interaction design.
             </p>
           </div>
 

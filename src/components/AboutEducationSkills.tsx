@@ -63,7 +63,7 @@ export const AboutEducationSkills: React.FC = () => {
                   <span>Education</span>
                 </div>
                 <div className="space-y-4">
-                  {education.map((edu) => (
+                  {(education || []).map((edu) => (
                     <div key={edu.degree} className="space-y-1">
                       <div className="text-sm font-semibold text-[#DBEAFE]">
                         {edu.degree}
@@ -86,7 +86,7 @@ export const AboutEducationSkills: React.FC = () => {
                   <span>Professional Experience</span>
                 </div>
                 <div className="space-y-4">
-                  {background.map((bg) => (
+                  {(background || []).map((bg) => (
                     <div key={bg.company} className="space-y-1">
                       <div className="text-sm font-semibold text-[#DBEAFE]">
                         {bg.role}
@@ -144,7 +144,7 @@ export const AboutEducationSkills: React.FC = () => {
 
               {/* Minimal Outlined Tags */}
               <div className="flex flex-wrap gap-2 pt-2">
-                {displayedSkills.map((skill) => (
+                {(displayedSkills || []).map((skill) => (
                   <div
                     key={skill}
                     className="group px-3 py-1.5 bg-[#080808] border border-blue-900/40 hover:border-[#3B82F6] hover:bg-blue-950/30 transition-all duration-200 cursor-default"

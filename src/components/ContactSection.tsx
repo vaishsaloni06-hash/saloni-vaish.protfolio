@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Github, Linkedin, Copy, Check, Send, MapPin, ArrowUpRight, Sparkles } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Copy, Check, Send, MapPin, ArrowUpRight, Sparkles } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
 
 export const ContactSection: React.FC = () => {
@@ -207,7 +207,7 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href={profile.githubUrl}
                 target="_blank"
@@ -229,6 +229,19 @@ export const ContactSection: React.FC = () => {
                 <span>LinkedIn Network</span>
                 <ArrowUpRight className="w-3 h-3 text-[#93C5FD]/70" />
               </a>
+
+              {profile.instagramlink && (
+                <a
+                  href={profile.instagramlink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#111111] border border-blue-900/40 hover:border-[#3B82F6] text-xs font-mono text-[#DBEAFE] hover:text-white transition-colors"
+                >
+                  <Instagram className="w-4 h-4 text-[#F472B6]" />
+                  <span>Instagram</span>
+                  <ArrowUpRight className="w-3 h-3 text-[#93C5FD]/70" />
+                </a>
+              )}
             </div>
           </div>
 

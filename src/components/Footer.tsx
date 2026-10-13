@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           hour: "2-digit",
           minute: "2-digit",
           second: "2-digit",
-          timeZone: "America/Los_Angeles",
+          timeZone: "Asia/Kolkata",
         })
       );
     };
@@ -43,12 +43,12 @@ export const Footer: React.FC = () => {
             </span>
           </div>
 
-          {/* Local Time in SF */}
+          {/* Local Time in Dehradun */}
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3B82F6]" />
-            <span className="text-[#93C5FD]/80">SAN FRANCISCO (PST):</span>
+            <span className="text-[#93C5FD]/80">DEHRADUN (IST):</span>
             <span className="text-[#BFDBFE] font-bold tabular-nums">
-              {time || "11:24:45"} PST
+              {time || "16:30:00"} IST
             </span>
           </div>
 
@@ -89,6 +89,16 @@ export const Footer: React.FC = () => {
             >
               LinkedIn
             </a>
+            {profile.instagramlink && (
+              <a
+                href={profile.instagramlink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#93C5FD]/80 hover:text-[#DBEAFE] transition-colors"
+              >
+                Instagram
+              </a>
+            )}
             <a
               href={`mailto:${profile.email}`}
               className="text-[#93C5FD]/80 hover:text-[#DBEAFE] transition-colors"

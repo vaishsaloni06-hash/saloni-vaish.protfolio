@@ -62,7 +62,7 @@ export const WorkProcess: React.FC = () => {
           />
 
           <div className="space-y-8">
-            {processSteps.map((step, index) => {
+            {(processSteps || []).map((step, index) => {
               const isSelected = selectedStep === index;
               return (
                 <div
